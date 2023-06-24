@@ -1,0 +1,34 @@
+ .contact {
+    background-image: url('/images/contact.png');
+    background-size: 100% auto;
+    background-position: center;
+    /* Add other background styles if needed */
+  }
+  
+  .contact .form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    /* Add other input/textarea styles if needed */
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .contact .form {
+      max-width: 600px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact .form {
+      max-width: 800px;
+    }
+  }
+  
+  /* Add more media queries as per your requirements */
+  
