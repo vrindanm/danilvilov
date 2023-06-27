@@ -347,6 +347,19 @@ h1{
   margin-left: 100px;
   margin-right: 100px;
 }
+.box-container .label {
+  position: relative;
+  top: auto;
+  left: auto;
+  background-color: #ff3d00;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: fit-content;
+}
 
 @media (max-width: 768px) {
   .box-container {
