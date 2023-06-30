@@ -228,6 +228,19 @@ color: #170404;
 .products .heading span {
   color: #e53e84;
 }
+.box-container .label {
+  position: relative;
+  top: auto;
+  left: auto;
+  background-color: #e53e84;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: fit-content;
+}
 
 
 
