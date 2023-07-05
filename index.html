@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online clothing store</title>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online clothing store</title>
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-    .home {
-        display: flex;
-        align-items: center;
-        min-height: 100vh;
-        background: url(images/danilb1.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-}
-@media (max-width: 600px) {
+  .home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/danilb1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 600px) {
     .row {
       flex-direction: column;
     }
+
     .inputBox {
       margin-bottom: 20px;
     }
+
     .submit-btn {
       width: 100%;
     }
@@ -37,18 +42,20 @@
       display: flex;
       align-items: center;
     }
-    .imagee{
+
+    .imagee {
       flex: 0 0 30%;
       /* background-image: url('\images\contactbanner.jpg'); */
       background-size: cover;
       background-position: center;
     }
+
     .form {
       flex: 0 0 70%;
     }
   }
 
-  
+
   .name {
     font-size: 40px;
   }
@@ -64,93 +71,96 @@
       font-size: 28px;
     }
   }
-      
+
   .highlight {
-    color: #e53e84;;
+    color: #e53e84;
+    ;
   }
+
   .name {
     color: black;
   }
 
   .navbar-brand {
-  font-size: 28px;
-  font-weight: bolder;
-}
-
-/* Increase font size for screens with a width of 768px or larger */
-@media (min-width: 768px) {
-  .navbar-brand {
-    font-size: 32px;
+    font-size: 28px;
+    font-weight: bolder;
   }
-}
 
-/* Increase font size for screens with a width of 992px or larger */
-@media (min-width: 992px) {
-  .navbar-brand {
-    font-size: 34px;
+  /* Increase font size for screens with a width of 768px or larger */
+  @media (min-width: 768px) {
+    .navbar-brand {
+      font-size: 32px;
+    }
   }
-}
- 
+
+  /* Increase font size for screens with a width of 992px or larger */
+  @media (min-width: 992px) {
+    .navbar-brand {
+      font-size: 34px;
+    }
+  }
 </style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
-          <div class="container-fluid">
-            <a class="navbar-brand"  href="#">Danil <span class="highlight">Vilov</span></a>
-            <!-- <h1 class="heading">
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Danil <span class="highlight">Vilov</span></a>
+        <!-- <h1 class="heading">
               <span class="name">Danil <span class="highlight">Vilov</span></span>
             </h1> -->
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Products
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#products">All Products</a></li>
-                    <li><a class="dropdown-item" href="#products">Men's T-Shirts</a></li>
-                    <li><a class="dropdown-item" href="#products">Women's T-Shirts</a></li>
-                    <li><a class="dropdown-item" href="#products">Sweat Shirts</a></li>
 
-                  </ul>
-                </li>
-               
-                <li class="nav-item">
-                  <a class="nav-link" href="#hero">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:danilvilov@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://instagram.com/danilvilovindia?igshid=MzRlODBiNWFlZA==">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/profile.php?id=100094008994520&mibextid=ZbWKwL">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#products">All Products</a></li>
+                <li><a class="dropdown-item" href="#products">Men's T-Shirts</a></li>
+                <li><a class="dropdown-item" href="#products">Women's T-Shirts</a></li>
+                <li><a class="dropdown-item" href="#products">Sweat Shirts</a></li>
+
               </ul>
-              
-            </div>
-            
-          </div>
-        </nav>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:danilvilov@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com/danilvilovofficial?igshid=MzRlODBiNWFlZA==">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/profile.php?id=100094008994520&mibextid=ZbWKwL">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -186,186 +196,207 @@
             </div>
           </div>
         </nav> -->
-         
-      </header>
 
-    <!--home section starts-->
+  </header>
 
-    <section class="home" id="home">
+  <!--home section starts-->
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3>New Arrivals</h3>
+      <span>For Men & Women</span>
+      <p>Unleashing the Art of Style <br>Welcome to Danil Vilov</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+  <!--home section ends-->
+
+  <!--about section starts-->
+  <section class="hero" id="hero">
+    <h1>About Us</span></h1>
+    <div class="container">
+      <div class="hero-content">
+        <div class="heading">
+          <!-- <h1>About Us</h1> -->
+        </div>
+        <h2>Why Choose Us?</h2>
+        <p>
+          When you choose Danil Vilov, you become a part of our vibrant community united by a shared passion for
+          self-expression and responsible fashion. We invite you to break free from conformity, embrace your unique
+          identity, and join us as we revolutionize the way we dress. Together, let's unleash the art of style and
+          create a more conscious, vibrant, and inclusive world.<br></br>
+          However, Danil Vilov not only believes in enhancing your personal style but also in uplifting the planet we
+          call home. We recognize the importance of sustainable practices and are committed to minimizing our
+          environmental footprint. By carefully sourcing ethically-produced materials, adopting eco-friendly
+          manufacturing processes, and promoting fair trade, we aim to make a positive impact on both the fashion
+          industry and the world at large.
+          <br></br>Discover the power of self-expression. Experience the magic of Danil Vilov.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/abt.jpg" alt="About Us Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- new arrivals section starts -->
+  <section class="newproducts" id="newproducts">
+    <h1 class="heading">Up<span>coming</span></h1>
+    <div class="newbox-container">
+      <div class="newbox">
+        <!-- <div class="label">-30% off</div> -->
+        <div class="newimage">
+          <img src="images/dv-logo-black.jpg" alt="">
+          <!-- <div class="icons">
+              <a href="#" class="cart-btn"><B>SOLD OUT</B></a>
+            </div> -->
+        </div>
+        <!-- <div class="content"> -->
+        <!-- <h3>demo</h3>
+            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
+        <!-- </div> -->
+      </div>
+      <div class="newbox">
+        <!-- <div class="label">-30% off</div> -->
+        <div class="newimage">
+          <img src="images/gwax-boy.jpg" alt="">
+          <!-- <div class="icons">
+              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            </div> -->
+        </div>
+        <!-- <div class="content"> -->
+        <!-- <h3>demo</h3>
+            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
+        <!-- </div> -->
+      </div>
+      <div class="newbox">
+        <!-- <div class="label">-30% off</div> -->
+        <div class="newimage">
+          <img src="images/naruto-back.jpg" alt="">
+          <!-- <div class="icons">
+              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            </div> -->
+        </div>
+        <!-- <div class="content"> -->
+        <!-- <h3>demo</h3>
+            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
+        <!-- </div> -->
+      </div>
+      <div class="newbox">
+        <!-- <div class="label">-30% off</div> -->
+        <div class="newimage">
+          <img src="images/black-panther-girl.jpg" alt="">
+          <!-- <div class="icons">
+              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            </div> -->
+        </div>
+        <!-- <div class="content"> -->
+        <!-- <h3>demo</h3>
+            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- new arrivals ends -->
+
+  <!-- about section ends -->
+  <section class="products" id="products">
+    <h1 class="heading">New<span> Drops</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <!-- <div class="label">-30% off</div> -->
+        <div class="image">
+          <img src="images/CA.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><B>SOLD OUT</B></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
+          </div>
+        </div>
         <div class="content">
-          <h3>New Arrivals</h3>
-          <span>For Men & Women</span>
-          <p>Unleashing the Art of Style <br>Welcome to Danil Vilov</p>
-          <a href="#products" class="btn">Shop Now</a>
+          <h3>Captain America</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
         </div>
-    </section>
-      <!--home section ends-->
-      
-    <!--about section starts-->
-    <section class="hero" id="hero">
-      <h1>About Us</span></h1>
-      <div class="container">
-        <div class="hero-content">
-            <div class="heading">
-            <!-- <h1>About Us</h1> -->
-            </div>
-            <h2>Why Choose Us?</h2>
-            <p>
-              When you choose Danil Vilov, you become a part of our vibrant community united by a shared passion for self-expression and responsible fashion. We invite you to break free from conformity, embrace your unique identity, and join us as we revolutionize the way we dress. Together, let's unleash the art of style and create a more conscious, vibrant, and inclusive world.<br></br>
-              However, Danil Vilov not only believes in enhancing your personal style but also in uplifting the planet we call home. We recognize the importance of sustainable practices and are committed to minimizing our environmental footprint. By carefully sourcing ethically-produced materials, adopting eco-friendly manufacturing processes, and promoting fair trade, we aim to make a positive impact on both the fashion industry and the world at large.
-              <br></br>Discover the power of self-expression. Experience the magic of Danil Vilov.
-            </p>
+      </div>
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <div class="image">
+          <img src="images/flash.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
+          </div>
         </div>
-        <div class="hero-image">
-            <img src="images/abt.jpg" alt="About Us Image">
+        <div class="content">
+          <h3>Flash</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
         </div>
+      </div>
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <div class="image">
+          <img src="images/ironman.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
+          </div>
         </div>
-    </section>
+        <div class="content">
+          <h3>Iron Man</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
+        </div>
+      </div>
 
- <!-- new arrivals section starts -->
- <section class="newproducts" id="newproducts">
-      <h1 class="heading">Up<span>coming</span></h1>
-      <div class="newbox-container">
-        <div class="newbox">
-            <!-- <div class="label">-30% off</div> -->
-          <div class="newimage">
-            <img src="images/dv-logo-black.jpg" alt="">
-            <!-- <div class="icons">
-              <a href="#" class="cart-btn"><B>SOLD OUT</B></a>
-            </div> -->
-          </div>
-          <!-- <div class="content"> -->
-            <!-- <h3>demo</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
-          <!-- </div> -->
-        </div>
-        <div class="newbox">
-            <!-- <div class="label">-30% off</div> -->
-          <div class="newimage">
-            <img src="images/gwax-boy.jpg" alt="">
-            <!-- <div class="icons">
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-            </div> -->
-          </div>
-          <!-- <div class="content"> -->
-            <!-- <h3>demo</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
-          <!-- </div> -->
-        </div>
-        <div class="newbox">
-            <!-- <div class="label">-30% off</div> -->
-          <div class="newimage">
-            <img src="images/naruto-back.jpg" alt="">
-            <!-- <div class="icons">
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-            </div> -->
-          </div>
-          <!-- <div class="content"> -->
-            <!-- <h3>demo</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div> -->
-          <!-- </div> -->
-        </div>
-      </div> 
-    </section>
-    <!-- new arrivals ends -->
-
-     <!-- about section ends -->
-     <section class="products" id="products">
-      <h1 class="heading">New<span> Drops</span></h1>
-      <div class="box-container">
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/CA.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><B>SOLD OUT</B></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Captain America</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <div class="image">
+          <img src="images/naruto.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
           </div>
         </div>
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/flash.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Flash</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
+        <div class="content">
+          <h3>Naruto</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <div class="image">
+          <img src="images/wonder-women.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
           </div>
         </div>
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/ironman.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Iron Man</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
+        <div class="content">
+          <h3>Wonder Women</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="discount-label">-30% off</div>
+        <div class="image">
+          <img src="images/naruto2.jpg" alt="">
+          <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
+            <!-- <a href="#" class="fas fa-share"></a> -->
           </div>
         </div>
-      
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/naruto.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Naruto</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
-          </div>
+        <div class="content">
+          <h3>Naruto</h3>
+          <div class="price">Rs.699.00/-<span>999.00</span></div>
         </div>
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/wonder-women.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Wonder Women</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
-          </div>
-        </div>
-        <div class="box">
-            <div class="label">-30% off</div>
-          <div class="image">
-            <img src="images/naruto2.jpg" alt="">
-            <div class="icons">
-              <!-- <a href="#" class="fas fa-heart"></a> -->
-              <a href="#" class="cart-btn"><b>SOLD OUT</b></a>
-              <!-- <a href="#" class="fas fa-share"></a> -->
-            </div>
-          </div>
-          <div class="content">
-            <h3>Naruto</h3>
-            <div class="price">Rs.699.00/-<span>999.00</span></div>
-          </div>
-        </div>
-<!--  <div class="box">
-           
+      </div>
+      <!--  <div class="box"> 
            <div class="image">
             <img src="images/cabo.jpg" alt="">
             <div class="icons">
@@ -379,7 +410,6 @@
             <div class="price">50.00<span>40.99</span></div>
           </div>
         </div>
-      
         <div class="box">
           <div class="image">
             <img src="images/cabo.jpg" alt="">
@@ -388,7 +418,7 @@
               <a href="#" class="cart-btn">SOLD OUT</a>
               <a href="#" class="fas fa-share"></a>
             </div>
-</div>
+        </div>
           <div class="content">
             <h3>tshirt</h3>
             <div class="price">50.00<span>40.99</span></div>
@@ -409,73 +439,95 @@
             <div class="price">50.00<span>40.99</span></div>
           </div>
         </div> -->
+    </div>
+  </section><br>
+
+  <!-- contact us -->
+  <!-- <section class="contact" id="contact">
+    <h1 class="heading">Contact <span class="contactspan">Us</span></h1>
+    <div class="row">
+      <div class="imagee">
       </div>
-    
-    </section>
-
-      <!-- contact us -->
-
-      <section class="contact" id="contact">
-        <h1 class="heading">Contact <span class="contactspan">Us</span></h1>
-        <div class="row">
-          <div class="imagee">
-          </div>
-          <form name="submit-to-google-sheet" action="#" class="form">
-            <div class="inputBox">
-              <input type="text" name="name" placeholder="Full Name" class="input-field" required>
-            </div>
-            <div class="inputBox">
-              <input type="email" name="email" placeholder="Email" class="input-field" required>
-            </div>
-            <div class="inputBox">
-              <textarea placeholder="Message" name="message" class="input-field" id="message" required ></textarea>
-            </div>
-            <div class="inputBox">
-              <input type="submit" value="Send" class="submit-btn">
-            </div>
-            <span id="msg"></span>
-          </form>
+      <form name="submit-to-google-sheet" action="#" class="form">
+        <div class="inputBox">
+          <input type="text" name="name" placeholder="Full Name" class="input-field" required>
         </div>
-      </section>
-
-      <footer>
-        <div class="footer1">
-          <div class="footer-bottom">
-            <p class="footer-bottom-text">Danil Vilov &copy; 2023. All rights reserved.</p>
-            <p class="footer-bottom-text "><small>Bangalore,Karnataka,India</small> </p>
-          </div>
+        <div class="inputBox">
+          <input type="email" name="email" placeholder="Email" class="input-field" required>
         </div>
-      </footer><br>
-      
-   
+        <div class="inputBox">
+          <textarea placeholder="Message" name="message" class="input-field" id="message" required></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" class="submit-btn">
+        </div>
+        <span id="msg"></span>
+      </form>
+    </div>
+  </section> -->
 
-  <!-- footer section ends-->
+  <section class="contact" id="contact">
+    <h1 class="heading">Contact <span class="contactspan">Us</span></h1>
+    <div class="row">
+      <div class="imagee">
+      </div>
+      <form name="submit-to-google-sheet" action="#" class="form">
+        <div class="inputBox">
+          <input type="text" name="name" placeholder="Full Name" class="input-field" required>
+        </div>
+        <div class="inputBox">
+          <input type="email" name="email" placeholder="Email" class="input-field" required>
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="Message" name="message" class="input-field" id="message" required></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" class="submit-btn">
+        </div>
+        <span id="msg"></span>
+      </form>
+    </div>
+  </section>
+
   
+  <!-- footer section starts-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-   
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3U7XeZrpzjoxxopxbhGjF2yxUpMu8dIJ-zwA59PWRT5cI8nF3oBYZCvCLIqRGcaYG/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById('msg')
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML ="Thank you for your message!"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
+  <footer>
+    <div class="footer1">
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">Danil Vilov &copy; 2023. All rights reserved.</p>
+        <p class="footer-bottom-text "><small>Bangalore,Karnataka,India</small> </p>
+      </div>
+    </div>
+  </footer><br>
+  <!-- footer section ends-->
 
 
-            })
-            
-            .catch(error => console.error('Error!', error.message))
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3U7XeZrpzjoxxopxbhGjF2yxUpMu8dIJ-zwA59PWRT5cI8nF3oBYZCvCLIqRGcaYG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Thank you for your message!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
         })
-    </script>
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
